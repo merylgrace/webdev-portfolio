@@ -19,8 +19,11 @@
     </header>
 
     <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm Meryl, a trying hard developer and designer. I love prompting to create functional web applications. ^^</p>
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>Hello! I'm Meryl, a trying hard developer and designer. I love prompting to create functional web applications. ^^</p>
+            <button id="sayHiBtn" class="say-hi-btn">Say Hi! 👋</button>
+        </div>
     </section>
 
       <section id="projects">
@@ -75,3 +78,28 @@
         <li>PHP, MySQL & CSS</li>
       </ul>
     </div>
+
+  </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out! I'd love to connect with you.</p>
+    <div class="contact-form-container">
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <label for="message">Say something nice:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Type your message here..." required></textarea>
+            </div>
+            <a href="https://github.com/merylgrace" target="_blank" class="github-contact-link">Send on GitHub →</a>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Meryl's Portfolio. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

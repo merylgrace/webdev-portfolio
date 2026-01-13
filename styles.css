@@ -56,14 +56,57 @@ section h2 {
 
 #about {
     background: #F0FFDF;
-    margin: 2rem auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
 }
 
 #about p {
     font-size: 1.1rem;
     color: #555;
+}
+
+.about-content {
+    text-align: center;
+    max-width: 600px;
+}
+
+.about-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #A8DF8E;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.say-hi-btn {
+    background: #A8DF8E;
+    color: #333;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(168, 223, 142, 0.3);
+}
+
+.say-hi-btn:hover {
+    background: #FFAAB8;
+    transform: scale(1.1);
+    box-shadow: 0 6px 18px rgba(255, 170, 184, 0.4);
+}
+
+.say-hi-btn:active {
+    transform: scale(0.98);
 }
 
 .projects-grid {
@@ -139,7 +182,7 @@ section h2 {
 
 #contact {
     text-align: center;
-    background: #FFD8DF;
+    background: #F0FFDF;
     margin: 2rem auto;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -148,6 +191,76 @@ section h2 {
 footer {
     background: #333;
     color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.contact-form-container {
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.form-group textarea {
+    padding: 1rem;
+    border: 2px solid #A8DF8E;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.95rem;
+    resize: vertical;
+    transition: all 0.3s ease;
+    background: white;
+    color: #333;
+}
+
+.form-group textarea:focus {
+    outline: none;
+    border-color: #FFAAB8;
+    box-shadow: 0 0 10px rgba(168, 223, 142, 0.3);
+}
+
+.form-group textarea::placeholder {
+    color: #999;
+}
+
+.github-contact-link {
+    display: inline-block;
+    background: #A8DF8E;
+    color: #333;
+    padding: 0.85rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    align-self: center;
+    border: none;
+}
+
+.github-contact-link:hover {
+    background: #FFAAB8;
+    transform: scale(1.05);
+}
     text-align: center;
     padding: 2rem;
     margin-top: 3rem;
