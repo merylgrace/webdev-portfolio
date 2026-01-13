@@ -4,6 +4,48 @@ document.getElementById('sayHiBtn').addEventListener('click', function() {
     console.log(message);
 });
 
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    
+    const formData = new FormData();
+    formData.append('email', email);
+    formData.append('message', message);
+    formData.append('_captcha', 'false');
+    formData.append('_next', window.location.href);
+    
+    fetch('https://formsubmit.co/ajax/luntian429.21@gmail.com', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            document.getElementById('contactForm').style.display = 'none';
+            document.getElementById('successMessage').style.display = 'block';
+            
+            setTimeout(() => {
+                document.getElementById('contactForm').style.display = 'flex';
+                document.getElementById('successMessage').style.display = 'none';
+                document.getElementById('contactForm').reset();
+            }, 3000);
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        document.getElementById('contactForm').style.display = 'none';
+        document.getElementById('successMessage').style.display = 'block';
+        
+        setTimeout(() => {
+            document.getElementById('contactForm').style.display = 'flex';
+            document.getElementById('successMessage').style.display = 'none';
+            document.getElementById('contactForm').reset();
+        }, 3000);
+    });
+});
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
