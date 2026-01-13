@@ -46,12 +46,17 @@ section {
     padding: 3rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    text-align: center;
 }
 
 section h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
     color: #333;
+    text-align: center;
+}
+
+section p {
     text-align: center;
 }
 
@@ -62,23 +67,44 @@ section h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0;
+    margin: 0 auto;
     padding: 2rem;
+    width: 100%;
+    max-width: none;
+}
+
+#projects h2 {
+    text-align: center;
+    width: 100%;
+}
+
+#projects > * {
+    text-align: center;
+}
+
+#projects .projects-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 #about {
     background: #F0FFDF;
-    margin: 0;
+    margin: 0 auto;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2rem;
+    text-align: center;
+    width: 100%;
+    max-width: none;
 }
 
 #about p {
     font-size: 1.1rem;
     color: #555;
+    text-align: center;
 }
 
 .about-content {
@@ -202,13 +228,33 @@ section h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0;
+    margin: 0 auto;
     padding: 2rem;
+    width: 100%;
+    max-width: none;
+}
+
+#contact h2 {
+    text-align: center;
+    width: 100%;
+}
+
+#contact p {
+    text-align: center;
+    width: 100%;
+}
+
+#contact > * {
+    text-align: center;
 }
 
 .contact-form-container {
     max-width: 500px;
-    margin: 2rem auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .contact-form {
