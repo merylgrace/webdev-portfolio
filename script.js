@@ -38,4 +38,14 @@ document.querySelectorAll('main section, main .project-highlight').forEach(el =>
 const photo = document.getElementById('profilePhoto');
 photo.addEventListener('error', () => { photo.style.opacity = '0.6'; photo.style.filter = 'grayscale(60%)'; });
 
-// Note: contact is handled via mailto links and resume download. If you want a contact form, I can re-add one.
+// Form submission via FormSubmit.co
+const form = document.getElementById('contactForm');
+if (form) {
+    form.addEventListener('submit', function(e) {
+        // FormSubmit.co handles the submission automatically
+        // Optional: show success feedback
+        setTimeout(() => {
+            form.reset();
+        }, 500);
+    });
+}

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Meryl — Social Media Assistant</title>
+  <title>Meryl Portfolio</title>
   <link rel="stylesheet" href="styles.css">
   <meta name="description" content="Meryl — Social media assistant focusing on content and community.">
 </head>
@@ -11,8 +11,8 @@
   <header class="site-header">
     <div class="header-inner">
       <div class="greeting">
-        <h1>Hello</h1>
-        <p class="name">Meryl — Social Media Assistant</p>
+        <h1>Meryl Grace</h1>
+        <p class="name">Social Media Assistant</p>
       </div>
       <div class="header-actions">
         <a class="icon-link" href="https://github.com/merylgrace" target="_blank" rel="noopener">GitHub</a>
@@ -60,11 +60,24 @@
     <section id="contact" class="contact">
       <div class="container">
         <h3>Get in touch</h3>
-        <p>I'm open to roles as a Social Media Assistant. If you'd like to review my resume or discuss fit, please email me or download my resume.</p>
-        <div class="contact-actions">
-          <a class="btn" href="mailto:luntian429.21@gmail.com">luntian429.21@gmail.com</a>
-          <a class="btn outline" href="resume.pdf" download>Download Resume</a>
-        </div>
+        <p>I'm open to roles as a Social Media Assistant. Send me a quick message below or email directly.</p>
+        <form id="contactForm" class="contact-form" action="https://formsubmit.co/luntian429.21@gmail.com" method="POST">
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Your email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Say something..." rows="4" required></textarea>
+          </div>
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+          <button type="submit" class="btn submit-btn">Send Message</button>
+        </form>
       </div>
     </section>
   </main>
