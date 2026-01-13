@@ -1,130 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meryl Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meryl — Social Media Assistant</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Meryl — Social media assistant focusing on content and community.">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="greeting">
+        <h1>Hello</h1>
+        <p class="name">Meryl — Social Media Assistant</p>
+      </div>
+      <div class="header-actions">
+        <a class="icon-link" href="https://github.com/merylgrace" target="_blank" rel="noopener">GitHub</a>
+        <a class="icon-link" href="mailto:luntian429.21@gmail.com">Email</a>
+        <a class="btn primary" href="resume.pdf" download>Download Resume</a>
+      </div>
+    </div>
+  </header>
 
-    <section id="about">
-        <div class="about-content">
-            <h2>About Me</h2>
-            <p>Hello! I'm Meryl, a trying hard developer and designer. I love prompting to create functional web applications. ^^</p>
-            <button id="sayHiBtn" class="say-hi-btn">Say Hi! 👋</button>
+  <main>
+    <section class="hero" id="profile">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <h2>Elevating social presence with strategy and care</h2>
+          <p class="lead">I create audience-first social content, run engagement campaigns, and analyze performance to grow meaningful communities. Skilled in content planning, copywriting, scheduling tools, and platform analytics — I help brands turn followers into active communities.</p>
+          <div class="hero-links">
+            <a class="btn outline" href="https://github.com/merylgrace" target="_blank" rel="noopener">View GitHub</a>
+            <a class="btn" href="mailto:luntian429.21@gmail.com">Email Me</a>
+          </div>
         </div>
+        <div class="hero-photo">
+          <img id="profilePhoto" src="meryl-photo.jpg" alt="Meryl — profile photo">
+        </div>
+      </div>
     </section>
 
-      <section id="projects">
-  <h2>Projects</h2>
-
-  <div class="projects-grid">
-
-    <div class="project-card">
-      <h3>Baby ERP System</h3>
-      <a href="https://github.com/merylgrace/it38a-entrep-dev/" target="_blank" class="github-link">
-        github.com/merylgrace/it38a-entrep-dev →
-      </a>
-      <ul>
-        <li>Enterprise pair project but did it like solo</li>
-        <li>Admin, manager, and employee roles</li>
-        <li>PHP & MySQL</li>
-      </ul>
-    </div>
-
-    <div class="project-card">
-      <h3>DDoS Detector</h3>
-      <a href="https://github.com/merylgrace/IAS2/" target="_blank" class="github-link">
-        github.com/merylgrace/IAS2 →
-      </a>
-      <ul>
-        <li>Network security detection tool</li>
-        <li>Designed for IAS2 project</li>
-        <li>Python</li>
-      </ul>
-    </div>
-
-    <div class="project-card">
-      <h3>MingkApp</h3>
-      <a href="https://github.com/merylgrace/it35-lab" target="_blank" class="github-link">
-        github.com/merylgrace/it35-lab →
-      </a>
-      <ul>
-        <li>Mobile app development project</li>
-        <li>First Ionic framework application</li>
-        <li>TypeScript & HTML</li>
-      </ul>
-    </div>
-
-    <div class="project-card">
-      <h3>Rice Inventory</h3>
-      <a href="https://github.com/merylgrace/rice-inventory" target="_blank" class="github-link">
-        github.com/merylgrace/rice-inventory →
-      </a>
-      <ul>
-        <li>Inventory management system</li>
-        <li>A forgotten project</li>
-        <li>PHP, MySQL & CSS</li>
-      </ul>
-    </div>
-
-    <div class="project-card">
-      <h3>Book</h3>
-      <a href="https://github.com/merylgrace/Book" target="_blank" class="github-link">
-        github.com/merylgrace/Book →
-      </a>
-      <ul>
-        <li>A collaborative project</li>
-        <li>Another forgotten project</li>
-        <li>PHP & CSS</li>
-      </ul>
-    </div>
-
-  </div>
-</section>
-
-<section id="contact">
-    <h2>Contact Me</h2>
-    <p>Feel free to reach out! I'd love to connect with you.</p>
-    <br>
-    <div class="contact-form-container">
-        <form class="contact-form" id="contactForm">
-            <div class="form-group">
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" placeholder="your@email.com" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Say something nice:</label>
-                <textarea id="message" name="message" rows="4" placeholder="Type your message here..." required></textarea>
-            </div>
-            <div class="contact-actions">
-                <button type="submit" class="submit-btn">Send Message</button>
-                <a href="https://github.com/merylgrace" target="_blank" class="github-contact-link">Connect with me on GitHub →</a>
-            </div>
-        </form>
-        <div id="successMessage" class="success-message" style="display: none;">
-            <p>Thank you! Your message has been sent. I'll get back to you soon! 😊</p>
+    <section id="selected-projects" class="selected">
+      <div class="container">
+        <h3>Selected Project</h3>
+        <div class="project-highlight">
+          <div class="project-info">
+            <h4>MingkApp — Social network for cat lovers</h4>
+            <p class="project-desc">Led content strategy mockups and community feature ideas for MingkApp — a niche social platform for cat enthusiasts. Focus areas included onboarding flows for new users, engagement loops (likes, comments, shares), campaign concepts for user-generated content, and analytics proposals to measure reach and retention.</p>
+            <ul>
+              <li>Designed content calendars and campaign concepts tailored to niche communities</li>
+              <li>Proposed engagement metrics and simple dashboards for campaign reporting</li>
+              <li>Drafted copy and onboarding microcopy to improve first-time retention</li>
+            </ul>
+            <a class="github-link" href="https://github.com/merylgrace/it35-lab" target="_blank" rel="noopener">View repository →</a>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<footer>
-    <p>&copy; 2026 Meryl's Portfolio. All rights reserved.</p>
-</footer>
+    <section id="contact" class="contact">
+      <div class="container">
+        <h3>Get in touch</h3>
+        <p>I'm open to roles as a Social Media Assistant. If you'd like to review my resume or discuss fit, please email me or download my resume.</p>
+        <div class="contact-actions">
+          <a class="btn" href="mailto:luntian429.21@gmail.com">luntian429.21@gmail.com</a>
+          <a class="btn outline" href="resume.pdf" download>Download Resume</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<button id="homeBtn" class="home-btn" title="Go to Home">↑</button>
+  <footer class="site-footer">
+    <div class="container">&copy; 2026 Meryl — Social Media Assistant</div>
+  </footer>
 
-<script src="script.js"></script>
+  <button id="homeBtn" class="home-btn" title="Back to top">↑</button>
+  <script src="script.js"></script>
 </body>
 </html>
