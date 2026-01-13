@@ -4,6 +4,23 @@ document.getElementById('sayHiBtn').addEventListener('click', function() {
     console.log(message);
 });
 
+const homeBtn = document.getElementById('homeBtn');
+
+window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) {
+        homeBtn.classList.add('show');
+    } else {
+        homeBtn.classList.remove('show');
+    }
+});
+
+homeBtn.addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
 document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
     
