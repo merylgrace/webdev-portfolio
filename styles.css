@@ -288,7 +288,7 @@ section h2 {
     border-radius: 8px;
     font-weight: 600;
     font-size: 1.1rem;
-    animation: slideIn 0.15s ease;
+    animation: slideIn 0.25s ease;
 }
 
 @keyframes slideIn {
